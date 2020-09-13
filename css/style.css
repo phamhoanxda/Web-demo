@@ -1,0 +1,377 @@
+/* *******DEFAULT VALUE ******* */
+/* CSS HEX
+--white: #ffffffff;
+--rich-black-fogra-29: #00171fff;
+--prussian-blue: #003459ff;
+--cg-blue: #007ea7ff;
+--carolina-blue: #00a8e8ff;
+ */
+
+/* ======================================
+                 GENNERAL CSS 
+========================================= */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: fff;
+}
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* ======================================
+                 PARALLAX (Generic) 
+========================================= */
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ======================================
+                 BUTTONS 
+========================================= */
+.btn-general {
+  border-width: 2px;
+  border-radius: 0%;
+  padding: 12px 26px 12px 26px;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.btn-white {
+  border-color: white;
+  color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+  background-color: #fff;
+  color: #00171fff;
+}
+.btn-blue {
+  border-color: #00a8e8ff;
+  color: #00a8e8ff;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: #00a8e8ff;
+  color: #fff;
+}
+
+/* ======================================
+               ANIMATION 
+========================================= */
+
+#home-cover {
+  animation-delay: 0.1s;
+}
+#home-heading {
+  animation-delay: 0.5s;
+}
+#home-btn {
+  animation-delay: 1s;
+}
+
+#home-cover,
+#home-heading,
+#home-btn {
+  animation-duration: 0.5s;
+}
+
+/* ======================================
+               CONTENT (Generic) 
+========================================= */
+
+.content-box {
+  padding: 40px 0 40px 0;
+}
+
+.content-title h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+  width: 30px;
+  height: 3px;
+  background-color: #00a8e8ff;
+  margin: 0 auto;
+}
+.content-title {
+  margin-bottom: 15px;
+}
+
+.content-title-white h3 {
+  color: #fff;
+}
+/* ======================================
+                 SOCIAL-ICON 
+========================================= */
+.social-list {
+  list-style: none;
+  padding-left: 0;
+}
+.social-list li {
+  display: inline-block;
+  margin: 0 12px;
+}
+.social-list i {
+  font-size: 17px;
+}
+.social-list i:hover {
+  color: #00a8e8ff;
+}
+.icon-gray {
+  color: rgb(170, 170, 170);
+}
+/* ======================================
+                 HOME 
+========================================= */
+
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  height: 100%;
+  background-image: url("../img/bg-home.jpg");
+}
+
+#home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+  /* text-align: center;; */
+}
+
+#home-heading H3 {
+  color: white;
+  font-size: 55px;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+
+/* ======================================
+                 SERVICES 
+========================================= */
+
+.service-item {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-item-icon i {
+  color: #00a8e8ff;
+  float: left;
+  padding: 15px;
+  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+  color: #fff;
+  background-color: #00a8e8ff;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+  margin: 0;
+}
+
+/* ======================================
+                 ABOUT 
+========================================= */
+#about {
+  background-color: rgb(236, 236, 236);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 600px;
+}
+#about-content-box {
+  float: left;
+}
+
+#about-content-box-outer {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#about-content-box-inner {
+  display: table;
+  vertical-align: middle;
+}
+
+#about .content-title h3 {
+  text-align: left;
+}
+#about .content-title-underline {
+  margin: 0 0 30px 0;
+}
+
+#about-desc p {
+  margin-bottom: 30px;
+}
+
+#about-bg-diagonal {
+  width: 60%;
+  float: right;
+  height: 100%;
+  background-image: url("./../img/bg-about.jpg");
+  border-left: 150px solid rgb(236, 236, 236);
+  border-top: 480px solid transparent;
+}
+
+/* ======================================
+                 WORK 
+========================================= */
+.row.no-gutters [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+.img-wrapper {
+  overflow: hidden;
+}
+.img-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+/* ======================================
+                 TEAM 
+========================================= */
+
+.team-member {
+  margin: 0 15px;
+}
+.team-member-infor {
+  padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 2px;
+}
+h4.team-member-designation {
+  color: #00a8e8ff;
+  font-size: 15px;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* ======================================
+                 ABOUT 
+========================================= */
+
+#testimonials-cover {
+  background-image: url("../img/bg-testimonials.jpg");
+}
+
+#testimonials .content-box {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
+#customers-testimonials {
+  padding: 50px 0;
+}
+
+.testimonial img {
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.testimonial blockquote {
+  border: 0;
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  color: #fff;
+  padding: 15px 150px;
+  position: relative;
+}
+
+.testimonial blockquote p {
+  color: #fff;
+}
+
+.testimonial blockquote::before {
+  content: "\201c";
+  top: 0;
+  left: 100px;
+}
+.testimonial blockquote::after {
+  content: "\201D";
+  bottom: 0;
+  right: 100px;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+  font-size: 80px;
+  font-style: italic;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.testimonial-author p {
+  color: #fff;
+  font-size: 17px;
+}
+.testimonial-author p strong {
+  display: block;
+  font-size: 22px;
+}
+
+/* ======================================
+                 PRICING 
+========================================= */
+.pricing-box {
+  border: 2px solid #00a8e8ff;
+  padding: 50px 0;
+  margin: 30px 0px;
+  width: 85%;
+}
+
+h4.pricing-title {
+  background-color: #00a8e8ff;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
