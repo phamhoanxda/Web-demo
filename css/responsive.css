@@ -1,0 +1,43 @@
+/* ======================================
+                 MEDIA QUERIES CSS 
+========================================= */
+
+/* Large Devices (Desktop & Laptop) */
+@media (min-width: 1200px) {
+  /* OK */
+}
+
+/* Medium Devices (Landscape Tables & Medium Laptop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* OK */
+}
+
+/* Small Devices (Portrait Tablets & Small Laptop) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    background-color: rgb(0, 0, 0, 0.1);
+    padding: 0;
+  }
+  .navbar-nav {
+    float: left;
+  }
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+  }
+}
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+}
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 480px) {
+}
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 320px) {
+}
